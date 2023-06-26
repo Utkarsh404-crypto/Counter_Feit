@@ -1,0 +1,26 @@
+{
+    "_format": "hh-sol-artifact-1",
+    "contractName": "Ownable",
+    "sourceName": "contracts/Ownable.sol",
+    "abi": [{
+            "inputs": [],
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+        },
+        {
+            "inputs": [],
+            "name": "isOwner",
+            "outputs": [{
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+            }],
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ],
+    "bytecode": "0x608060405234801561001057600080fd5b50336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550610105806100606000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80638f32d59b14602d575b600080fd5b60336047565b604051603e919060b6565b60405180910390f35b60003373ffffffffffffffffffffffffffffffffffffffff1660008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1614905090565b60008115159050919050565b60b081609d565b82525050565b600060208201905060c9600083018460a9565b9291505056fea2646970667358221220df15c5348acf9d194bd120854148b1ff3d902afcd72a30ac057d80ed5f219e5b64736f6c63430008110033",
+    "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c80638f32d59b14602d575b600080fd5b60336047565b604051603e919060b6565b60405180910390f35b60003373ffffffffffffffffffffffffffffffffffffffff1660008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1614905090565b60008115159050919050565b60b081609d565b82525050565b600060208201905060c9600083018460a9565b9291505056fea2646970667358221220df15c5348acf9d194bd120854148b1ff3d902afcd72a30ac057d80ed5f219e5b64736f6c63430008110033",
+    "linkReferences": {},
+    "deployedLinkReferences": {}
+}

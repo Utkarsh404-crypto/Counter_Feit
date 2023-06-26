@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Maven+Pro&family=Montserrat:wght@400;500&family=Noto+Sans:wght@300&display=swap');
+.carousel-inner {
+    display: block;
+    width: 50%;
+}
+
+.carousel {
+    position: relative;
+    background-image: url("../home/images/who.gif");
+    background-repeat: no-repeat;
+    background-position: 50rem 1px;
+    background-size: 48% 90%;
+    background-blend-mode: soft-light;
+}
+
+.carousel-control-prev {
+    width: 4%;
+    display: none;
+}
+
+.carousel-control-next {
+    width: 100%;
+    display: none;
+}
+
+.carousel-indicators {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.font {
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 450;
+    text-shadow: 2px 2px 3px #7a71db;
+}
+
+.btn {
+    font-family: 'Noto Sans', sans-serif;
+    background: transparent;
+    padding: 6px;
+    cursor: pointer;
+    font-size: 50px;
+    font-weight: bold;
+    border-radius: 4px;
+    margin: 25px 5rem 2rem 5rem;
+    text-align: center;
+    height: 20vh;
+    color: black;
+    transition: ease-out 0.3s;
+    outline: none;
+    width: 90%;
+    border-radius: 4rem;
+    border: 3px solid black;
+}
+
+.btn-error {
+    cursor: not-allowed! important;
+}
+
+#btn-1:hover,
+#btn-2:hover,
+#btn-3:hover {
+    background-image: linear-gradient(to right, #757F9A 0%, #D7DDE8 51%, #757F9A 100%);
+    box-shadow: inset 150px 0 0 0 rgb(255, 255, 255);
+    cursor: pointer;
+    color: #000;
+    transform: translateY(10%);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.texts {
+    display: flex;
+    justify-content: center;
+}
+
+.error {
+    font-size: medium;
+}
+
+.carousel-inner {
+    transition: transform 0.5s ease;
+}
+
+@media screen and (max-width: 280px) {
+    .font {
+        font-size: 3rem;
+    }
+    .btn {
+        font-size: 38px;
+        height: 10vh;
+    }
+    .carousel-inner {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:992px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .center {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: column;
+        height: fit-content;
+        justify-content: center;
+        margin: auto;
+    }
+    .btn {
+        margin: 1em auto 2rem auto;
+        width: 90%;
+        height: 15vh;
+        border-radius: 12rem;
+    }
+    .carousel-inner {
+        width: 100%;
+        height: 100%;
+    }
+    .font {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: auto auto auto 2rem;
+    }
+}

@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#logoutBtn {
+    display: flex;
+    float: right;
+    font-size: larger;
+    font-weight: 500;
+    z-index: 999;
+    margin-right: 10px;
+    color: #000;
+}
+
+#logoutBtn:hover {
+    cursor: pointer;
+}
+
+#logoutBtn:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#logoutBtn:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}

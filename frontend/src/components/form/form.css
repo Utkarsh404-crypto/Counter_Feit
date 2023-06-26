@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans:wght@300&display=swap');
+#logo {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 21vw;
+    height: 10%;
+    margin: 1rem;
+    background-color: white;
+    border-radius: 5rem;
+    border: 1px solid #000;
+    box-shadow: 3px 3px 13px #000;
+}
+
+#helloTitle {
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+#welcomebackTitle {
+    -webkit-animation: glow2 1s ease-in-out infinite alternate;
+    -moz-animation: glow2 1s ease-in-out infinite alternate;
+    animation: glow2 1s ease-in-out infinite alternate;
+}
+
+.paragraph {
+    color: rgb(255, 255, 255);
+}
+
+.rightPanelImg {
+    background-image: url(../form/images/illus3.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    z-index: -1;
+}
+
+.leftPanelImg {
+    background-image: url(../form/images/illus3.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    z-index: -1;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 8px rgb(212, 0, 255), 0 0 18px rgb(208, 108, 255), 0 0 28px #b651e5, 0 0 38px #a803ae, 0 0 48px #590777, 0 0 58px #c700e6, 0 0 68px #e6008e;
+    }
+}
+
+@keyframes glow2 {
+    from {
+        text-shadow: 0 0 2px rgb(54, 10, 50), 0 0 8px rgb(255, 108, 226), 0 0 10px #f986ff, 0 0 22px #ff11db, 0 0 30px #571277, 0 0 40px #e600d3, 0 0 48px #4d0062;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #logo {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        width: 42vw;
+        height: 7%;
+        margin: 1rem;
+        background-color: white;
+    }
+    .leftPanelImg {
+        background-image: url(../form/images/illus3.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 69vw 100%;
+        z-index: -1;
+    }
+    .rightPanelImg {
+        background-image: url(../form/images/illus3.jpg );
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 69vw 100%;
+        z-index: -1;
+        float: left;
+    }
+}
+
+.style {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 1.5rem;
+    padding: 4px;
+    width: 25%;
+    height: 30%;
+    animation-name: example;
+    animation-duration: 900ms;
+}
+
+.heading-error {
+    font-family: 'Anton', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: rgb(255, 0, 0);
+}
+
+.heading-success {
+    font-family: 'Anton', sans-serif;
+    font-size: 26px;
+    color: green;
+    letter-spacing: 2px;
+}
+
+#tickIcon {
+    width: 38px;
+}
+
+.error-text-register {
+    color: red;
+    margin-top: -15px;
+    margin-bottom: 10px;
+    margin-left: 0x;
+}
+
+.error-input {
+    background-color: #e600d3;
+}
+
+@keyframes example {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
